@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
     "start:prod": "cross-env NODE_ENV=production node ./bundle/app.js",
-    "start:multi": "tsc && NODE_ENV=production node dist/multi.js",
+    "start:multi": "tsc && NODE_ENV=production node dist/multi.ts",
     "test": "jest --silent"
   },
   "repository": {

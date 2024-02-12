@@ -26,12 +26,16 @@ if (cluster.isPrimary) {
     }
   });
 } else {
-  server.listen(PORT, () => {
-    console.log(
-      `Worker ${process.pid} server running at http://localhost:${PORT}/`
-    );
-  });
-  process.on("message", (message: User[]) => {
-    Users.users = message;
-  });
+  const worker = cluster.worker;
+  if (worker) {
+    server.listen(PORT, () => {
+      console.log(
+        `Worker ${process.pid} server running at http://localhost:${PORT}/`
+      );
+    });
+    process.on("message", (message: User[]) => {
+      // TODO: fix the error
+      //   Users.users = message;
+    });
+  }
 }

@@ -16,6 +16,8 @@ Application Node.js version 20.11.0
 
 ## To run multi build
 
+Feature is not implemented yet
+
 ```npm run start:build```
 
 ## To run tests 
