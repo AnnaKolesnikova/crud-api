@@ -1,0 +1,38 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Simple CRUD API using Node.js and Typescript",
+  "main": "app.ts",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
+    "start:prod": "cross-env NODE_ENV=production node ./bundle/app.js",
+    "test": "jest --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaKolesnikova/crud-api.git"
+  },
+  "keywords": [
+    "node",
+    "crud",
+    "typescript"
+  ],
+  "author": "Hanna Ilyinchyk <github:@AnnaKolesnikova>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaKolesnikova/crud-api/issues"
+  },
+  "homepage": "https://github.com/AnnaKolesnikova/crud-api#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/uuid": "^9.0.8",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.2",
+    "tslib": "^2.6.2",
+    "uuid": "^9.0.1"
+  }
+}
