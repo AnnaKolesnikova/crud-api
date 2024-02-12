@@ -6,6 +6,7 @@
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
     "start:prod": "cross-env NODE_ENV=production node ./bundle/app.js",
+    "start:multi": "tsc && NODE_ENV=production node dist/multi.js",
     "test": "jest --silent"
   },
   "repository": {
@@ -28,7 +29,9 @@
     "@types/uuid": "^9.0.8",
     "nodemon": "^3.0.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "dotenv": "^16.4.2",

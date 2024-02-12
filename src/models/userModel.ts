@@ -7,7 +7,7 @@ export interface User {
   hobbies: string[] | [];
 }
 
-export class Users {
+export default class Users {
   users: User[] = [];
 
   getById(id: string): User {

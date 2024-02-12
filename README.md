@@ -14,7 +14,13 @@ Application Node.js version 20.11.0
 
 ```npm run start:prod```
 
-## To run tests
+## To run multi build
+
+```npm run start:build```
+
+## To run tests 
+
+Feature is not implemented yet
 
 ```npm run test```
 
